@@ -1,0 +1,31 @@
+/* Loading.css */
+
+/* Hexagon spinning animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Text blinking animation */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  /* Animate the hexagon to spin */
+  .hexagon {
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Animate the loading text to blink */
+  .loading-text {
+    animation: blink 2000ms step-start infinite;
+  }
+  
+  /* Positioning the elements inside a container */
+  .loading-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between hexagon and text */
+  }
+  
