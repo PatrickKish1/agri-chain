@@ -8,6 +8,7 @@ import JobsPage from './pages/ProductsPage';
 import GigsPage from './pages/GigsPage';
 import CreateGig from './pages/CreateGig';
 import BuyNow from './pages/BuyNow';
+import Orders from './pages/Orders';
 import { WalletProvider } from './context/Context';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/gigs" element={<GigsPage />} />
             <Route path="/creategig" element={<CreateGig />} />
             <Route path="/details/:productId" element={<BuyNow />} />
+            <Route path="/orders" element={<Orders />}/>
           </Routes>
         </main>
         <Footer />

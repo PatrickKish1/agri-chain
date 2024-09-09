@@ -120,6 +120,9 @@ const Header = () => {
             <Link to="/products" className="bg-[#15d3e1] text-white px-4 py-2 rounded font-bold">
               Buy
             </Link>
+            <Link to="/orders" className="bg-[#15d3e1] text-white px-4 py-2 rounded font-bold">
+              Orders
+            </Link>
           </>
         )}
 
