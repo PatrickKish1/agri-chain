@@ -17,7 +17,7 @@ import partnerImage8 from '../assets/meta-logo.png';
 import twitterIcon from '../assets/TwitterX.svg';
 import instagramIcon from '../assets/Instagram.svg';
 import linkedinIcon from '../assets/LinkedIn.svg';
-import techComm from '../assets/tech-comm.jpg'
+import Assets from './Assets';
 import Products from './Products';
 import productImage1 from '../assets/rice-1.jpg';
 import productImage2 from '../assets/rice-2.jpg';
@@ -28,6 +28,7 @@ import productImage6 from '../assets/onions.jpg';
 
 function Home() {
   const products = Products.slice(0, 8);
+  const assets = Assets;
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 overflow-hidden">
@@ -38,7 +39,11 @@ function Home() {
         </div>
 
         <div>
-          <img src={techComm} alt="community" width={1100} className='ml-[40px] mb-[120px]' />
+          <img src={assets.agriComm1} alt="community" width={1100} className='ml-[40px] mb-[120px]' />
+        </div>
+
+        <div className="absolute left-0 top-[820px] z-0">
+          <img src={bgHexagon1} alt="Background Hexagon" width={280} height={280} />
         </div>
 
         <div className="max-w-1/2 z-10 mb-[400px] ml-10 relative">
@@ -54,8 +59,8 @@ function Home() {
           <div className="absolute right-[-50px] bottom-[-90px] z-0">
             <img src={bgHexagon2} alt="Background Hexagon" width={280} height={280} />
           </div>
-          <div className="relative z-10 mr-24 mb-5">
-            <img src="https://img.freepik.com/free-vector/team-programmers-working-program-code-with-laptops-teamwork-male-female-professional-testers-coders-flat-vector-illustration-software-development-programming-lesson-concept_74855-22051.jpg" alt="Girl Coding Illustration" width={530} height={530} className='rounded-lg h-[420px] mb-[90px]'/>
+          <div className="relative z-10 mr-[30px] mb-5">
+            <img src={assets.marketPlace} alt="Girl Coding Illustration" width={600} className='rounded-[30px] h-[420px] mb-[90px]'/>
           </div>
         </div>
       </section>
@@ -156,11 +161,11 @@ function Home() {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute right-0 top-[-20px]">
-            <img src={bgHexagon2} alt="Background Hexagon" width={200} height={200} />
+          <div className="absolute left-[-665px] top-[-20px]">
+            <img src={bgHexagon1} alt="Background Hexagon" width={250} height={250} />
           </div>
           <div className="relative z-10">
-            <img src="https://miro.medium.com/v2/resize:fit:768/1*4XpsstX0UCrKvasLFL5Csg.png" alt="Agrobiz Team" className="rounded-lg" width={1200} height={1200} />
+            <img src={assets.delivery} alt="Agrobiz Team" className="rounded-lg" width={1200} height={1200} />
           </div>
         </div>
       </section>

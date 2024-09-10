@@ -1,18 +1,20 @@
 import React from "react";
-import tewoLogo from "../assets/tewo-logo.png";
+// import tewoLogo from "../assets/tewo-logo.png";
 import callIcon from "../assets/call.svg";
 import emailIcon from "../assets/email.svg";
 import linkedinIcon from "../assets/linkedin-white.svg";
 import twitterIcon from "../assets/twitterx-white.svg";
 import instagramIcon from "../assets/instagram-white.svg";
+import Assets from './Assets'
 
 const Footer = () => {
+  const assets = Assets;
   return (
     <footer className="bg-[#071d3d] text-white py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start px-4">
         {/* Logo and Copyright */}
         <div className="mb-6 md:mb-0 md:ml-[80px]"> {/* Added margin-left for more spacing */}
-          <img src={tewoLogo} alt="EquiBloc Logo" className="mb-2 ml-[-18px]" width={250} />
+          <img src={assets.tewoLogo} alt="EquiBloc Logo" className="mb-2 ml-[-18px]" width={250} />
           <p>Tewo Republic Copyright © 2024</p>
           <p>Tewo Republic - All rights Reserved.</p>
         </div>
